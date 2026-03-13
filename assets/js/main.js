@@ -18,8 +18,10 @@ function init() {
     file = file.split('.')[0]
     document.querySelector('title').textContent = file[0].toUpperCase() + file.slice(1) + "'s ListenAni" 
     let target = document.querySelector('.audio')
-    song.forEach(i => {
-        target.innerHTML += template(i)
-    });
+    if (file == 'home') {
+        song.forEach(i => {
+            target.innerHTML += template(i)
+        });
+    }
 }
 init()

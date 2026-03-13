@@ -2,21 +2,28 @@
     display: flex;
 }
 .sidebar {
-    display: fixed;
-    width: 350px;
+    position: fixed;
+    width: 300px;
     background-color: rgb(255, 161, 66);
     height: 100vh;
 }
+iframe {
+    min-width: 268px;
+    min-height: 250px;
+    width: 4vw;
+    height: 2vw;
+}
 .content {
+    margin-left: 300px;
     display: flex;
     flex-direction: column;
-    width: 81vw;
+    width: auto;
     height: 100vh;
 }
 .title {
     display: flex;
     justify-content: center;
-    font-size: 5rem;
+    font-size: 4rem;
     width: 100%;
     border-bottom: 5px solid black;
     margin-bottom: 10px;
@@ -25,7 +32,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    font-size: 4rem;
+    font-size: 3rem;
 }
 .navbar a {
     text-align: center;
@@ -35,14 +42,18 @@
 }
 .banner {
     object-fit: cover;
-    width: 82vw;
+    width: auto;
     height: 200px;
 }
 .box {
     display: flex;
     justify-content: center;
-    width: 82vw;
+    align-items: center;
+    width: auto;
+    height: auto;
     margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 5px;
 }
 .box form {
     display: flex;
@@ -50,10 +61,11 @@
     gap: 20px;
 }
 .box-template {
-    padding: 20px;
+    padding: 0 20px;
     font-size: 40px;
     background-color: aliceblue;
-    width: 50vw;
+    min-width: 50vw;
+    width: auto;
     border-radius: 20px;
 }
 iframe:hover {
@@ -65,8 +77,9 @@ input, button {
     font-size: 40px;
 }
 .audio {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 10px;
 }
 body {
@@ -81,8 +94,10 @@ body::-webkit-scrollbar {
 }
 table {
     border-collapse: collapse;
+    width: 60vw;
+    display: flex;
+    justify-self: center;
 }
 tr td, tr th {
     padding: 5px;
-
 }

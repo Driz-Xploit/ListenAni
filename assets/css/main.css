@@ -56,6 +56,10 @@
     width: 50vw;
     border-radius: 20px;
 }
+iframe:hover {
+    transition: 0.3s;
+    transform: scale(1.05);
+}
 input, button {
     height: 50px;
     font-size: 40px;
@@ -80,4 +84,5 @@ table {
 }
 tr td, tr th {
     padding: 5px;
+
 }

@@ -41,9 +41,9 @@ iframe {
     color: black;
 }
 .banner {
-    object-fit: cover;
     width: auto;
     height: 200px;
+    background-position: top;
 }
 .box {
     display: flex;
